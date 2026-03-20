@@ -11,7 +11,7 @@ The dataset was obtained from the TMDB API and includes:
 - Financial data (budget and revenue)  
 - Audience metrics (ratings, vote counts, popularity)  
 - Movie information (genres, collections, cast, and directors)
-Where this analysis is based on a selected set of popular movies.
+This analysis is based on a selected set of popular movies.
 
 ##  Methodology
 
@@ -27,7 +27,7 @@ I built a pipeline to process the data step by step:
 
 From the results, *Avatar* is the highest earning movie, with more than **2900 million USD** in revenue. and it is followed by *Avengers: Endgame* and *Titanic*.
 
-I noticed that the movies with the highest revenue also appear at the top in terms of profit. This means they were able to recover their production costs very well. However, some movies like *Star Wars: The Last Jedi* still made profit but rank lower, showing that they are less efficient compared to others.
+I noticed that the movies with the highest revenue also appear at the top in terms of profit. This means they were able to recover their production costs very well. However, some movies like *Star Wars: The Last Jedi* still made a profit but ranked lower, showing that they are less efficient compared to others.
 
 ### Return on Investment (ROI)
 
@@ -51,35 +51,35 @@ Movies with larger budgets generally generate higher revenue. However, some movi
 
 *The Avengers* has the highest number of votes, showing strong audience engagement.
 
-Movies like *Avengers: Endgame* and *Avengers: Infinity War* also have high ratings, meaning they are both popular and well received. At the same time, some movies earn a lot but have lower ratings. This shows that popularity and quality are not always the same.
+Movies like *Avengers: Endgame* and *Avengers: Infinity War* also have high ratings, meaning they are both popular and well-received. At the same time, some movies earn a lot but have lower ratings. This shows that popularity and quality are not always the same.
 
 ### ROI by Genre
 
 ![ROI by Genre](figures/roi_by_genre.png)
 
-ROI varies across genres. Some genres perform more consistently, while others show more variation.This suggests that genre can influence how efficiently a movie performs.
+ROI varies across genres. Some genres perform more consistently, while others show more variation. This suggests that genre can influence how efficiently a movie performs.
 
 ### Franchise vs Standalone Movies
 
 ![Franchise vs Standalone](figures/franchise_vs_standalone.png)
 
-From the results:
+Key findings:
 
-- Franchise movies usually have higher budgets  
-- They perform more consistently  
-- Standalone movies show more variation  
+- Franchise movies typically have higher budgets
+- They deliver more consistent performance
+- Standalone movies show greater variation in results
 
-This means franchises are more stable, while standalone movies can either perform very well or not as expected.
+  Franchises offer stability, while standalone movies can either exceed expectations or underperform.
 
 ### Most Successful Franchises
 
 The **Avengers Collection** is the most successful franchise in terms of total revenue.
 
-Other franchises like *Star Wars* also perform well, but not at the same level. This shows that consistent performance across multiple movies is important.
+Other franchises, such as *Star Wars*, also perform well, but not at the same level. This shows that consistent performance across multiple movies is important.
 
 ### Most Successful Directors
 
-**James Cameron** stands out as the most successful director, mainly because of *Avatar* and *Titanic*. Other directors also perform well, especially those involved in large franchise movies.
+**James Cameron** stands out as the most successful director, mainly because of *Avatar* and *Titanic*. Other directors also perform well, particularly those involved in large-franchise films.
 
 ### Revenue Trends Over Time
 
