@@ -195,7 +195,7 @@ The following are generated:
 
 ## How to Run the Project
 
-### 1. Activate virtual environment
+### 1. Activate the virtual environment
 
 ```bash
 .venv\Scripts\activate
