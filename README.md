@@ -2,11 +2,9 @@
 
 #  TMDB Movie Data Analysis Pipeline
 
-## Overview
+## An overview of the project
 
-This project implements a data pipeline to collect, process, and analyze movie data from the TMDB (The Movie Database) API.
-
-The main goal is to transform raw JSON data into a structured dataset and generate meaningful insights about movie performance, including financial success, audience engagement, and investment efficiency.
+This project implements a data pipeline to collect, process, and analyze movie data from the TMDB (The Movie Database) API. The main goal is to transform raw JSON data into a structured dataset and generate meaningful insights about movie performance, including financial success, audience engagement, and investment efficiency.
 
 The workflow follows a clear pipeline structure:
 
@@ -16,7 +14,7 @@ The workflow follows a clear pipeline structure:
 * KPI analysis
 * Visualization
 
----
+
 
 ## Objectives
 
@@ -28,7 +26,7 @@ The workflow follows a clear pipeline structure:
 * Identify the most successful franchises and directors
 * Visualize key insights
 
----
+
 
 ## Data Source
 
@@ -39,7 +37,7 @@ Data is collected from the TMDB API and includes:
 
 A predefined list of movie IDs is used to ensure consistency and reproducibility.
 
----
+
 
 ## Project Structure
 
@@ -47,14 +45,14 @@ A predefined list of movie IDs is used to ensure consistency and reproducibility
 tmbd-movie-project/
 │
 ├── data/
-│   └── movies_clean.csv          # Final cleaned dataset
+│   └── movies_clean.csv          
 │
 ├── logs/
-│   └── pipeline.log              # Execution logs
+│   └── pipeline.log              
 │
 ├── reports/
-│   ├── analysis_summary.md       # Final report
-│   └── figures/                  # Saved visualizations
+│   ├── analysis_summary.md       
+│   └── figures/                  
 │       ├── revenue_vs_budget.png
 │       ├── popularity_vs_rating.png
 │       ├── roi_distribution_by_genre.png
@@ -62,21 +60,20 @@ tmbd-movie-project/
 │       └── yearly_revenue_trend.png
 │
 ├── src/
-│   ├── api_client.py             # API requests (movies + credits)
-│   ├── data_fetcher.py           # Parallel data collection
-│   ├── data_cleaning.py          # Data cleaning & transformation
-│   ├── feature_engineering.py    # Feature creation (profit, ROI)
-│   ├── kpi_analysis.py           # KPI calculations & rankings
-│   ├── visualization.py          # Data visualization functions
-│   ├── utils.py                  # Logging setup
-│   └── README.md                 # Module notes (optional)
-│
-├── main.py                       # Runs the full pipeline
-├── config.py                     # API key and configuration
-└── README.md                     # Project documentation
+│   ├── api_client.py             
+│   ├── data_fetcher.py           
+│   ├── data_cleaning.py          
+│   ├── feature_engineering.py    
+│   ├── kpi_analysis.py           
+│   ├── visualization.py          
+│   ├── utils.py                  
+│                 
+├── main.py                       
+├── config.py                     
+└── README.md                     
 ```
 
----
+
 
 ## Methodology
 
@@ -86,7 +83,7 @@ tmbd-movie-project/
 * Parallel processing is used to improve performance
 * Basic error handling ensures stability
 
----
+
 
 ### 2. Data Cleaning
 
@@ -95,7 +92,7 @@ tmbd-movie-project/
 * Missing and inconsistent values are handled
 * Collection names and credits are extracted
 
----
+
 
 ### 3. Feature Engineering
 
@@ -105,10 +102,9 @@ New variables are created for analysis:
 * `revenue_musd` → revenue in million USD
 * `profit_musd` → revenue − budget
 * `roi` → return on investment
+Where the dataset is also filtered to keep only valid and released movies.
 
-The dataset is also filtered to keep only valid and released movies.
 
----
 
 ### 4. KPI Analysis
 
@@ -128,7 +124,7 @@ Additional analysis includes:
 * **Most successful franchises**
 * **Most successful directors**
 
----
+
 
 ### 5. Visualization
 
@@ -146,7 +142,7 @@ All visual outputs are stored in:
 reports/figures/
 ```
 
----
+
 
 ## Outputs
 
@@ -163,7 +159,7 @@ The following are generated:
 * Visualizations → `reports/figures/`
 * Logs → `logs/pipeline.log`
 
----
+
 
 ## Key Insights
 
@@ -173,9 +169,9 @@ The following are generated:
 * Popularity and rating are not always correlated
 * Franchise movies show more consistent performance
 * A few franchises dominate total revenue
-* Certain directors (e.g., James Cameron) contribute significantly to success
+* Certain directors (for instance James Cameron) contribute significantly to success
 
----
+
 
 ## Limitations
 
@@ -184,7 +180,7 @@ The following are generated:
 * Some filters return empty results due to dataset limitations
 * External factors such as inflation are not considered
 
----
+
 
 ## Technologies Used
 
@@ -195,7 +191,7 @@ The following are generated:
 * Matplotlib
 * Seaborn
 
----
+
 
 ## How to Run the Project
 
